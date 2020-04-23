@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  animation: 0.2s fadeIn forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  padding: 15px;
+  font-family: "dank mono", monospace;
+  font-size: 14px;
+}
+
+h1 {
+  font-family: cursive;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: stretch;
+  margin: auto 30px;
+}
+
+.column {
+  flex-direction: column;
+}
+
+[class*="column-"] {
+  padding: 5px 10px;
+  background: rebeccapurple;
+  margin-right: 1px;
+  margin-bottom: 1px;
+}
+
+/* you're overthinking this. you can just use width: */
+.column-1,
+.column-3 {
+  width: 25%;
+}
+.column-2 {
+  width: 50%;
+}
+
+.row-2 .column-2 {
+  width: 75%;
+  margin-left: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+ul.flex {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex li {
+  list-style: none;
+  height: 100%;
+  padding: 25px 10px;
+}
+
+.flex li:nth-child(1) {
+  background-color: rosybrown;
+}
+.flex li:nth-child(2) {
+  background-color: royalblue;
+}
+.flex li:nth-child(3) {
+  background-color: yellow;
+}
+.flex li:nth-child(4) {
+  background-color: yellowgreen;
+}
+.flex li:nth-child(5) {
+  background-color: orange;
+}
+
+.calc-container {
+  max-width: 250px;
+  background-color: black;
+  font-size: 16px;
+}
+
+.numPad {
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.screen {
+  width: 100%;
+  min-height: 50px;
+  color: white;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 10px;
+  font-family: "Arial";
+  font-size: 1em;
+}
+
+.numPad > button {
+  cursor: pointer;
+  border: none;
+  margin: 1px 1px 0 0;
+  background-color: #ebebeb;
+  width: calc(25% - 1px);
+  font-size: 1em;
+  border-radius: 0;
+}
+
+.numPad > button:hover {
+  background-color: #f7f7f7;
+}
+
+.numPad > button:active {
+  background-color: #bbbcbe;
+}
+
+.numPad .orange {
+  background-color: #df974c;
+  margin-right: 0;
+  width: 25%;
+}
+
+.numPad .orange:hover {
+  background-color: #f1a655;
+}
+
+.numPad .orange:active {
+  background-color: #cc8c47;
+}
+
+.numPad .numPad--clear {
+  width: calc(50% - 1px);
+}
+
+.numPad .numPad--0 {
+  width: calc(75% - 1px);
+}
