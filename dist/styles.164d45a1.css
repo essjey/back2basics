@@ -156,4 +156,113 @@ ul.flex {
   width: calc(75% - 1px);
 }
 
+.css-exp .col-1 {
+  width: calc(1 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-2 {
+  width: calc(2 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-3 {
+  width: calc(3 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-4 {
+  width: calc(4 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-5 {
+  width: calc(5 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-6 {
+  width: calc(6 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-7 {
+  width: calc(7 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-8 {
+  width: calc(8 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-9 {
+  width: calc(9 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-10 {
+  width: calc(10 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-11 {
+  width: calc(11 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .col-12 {
+  width: calc(12 / 12 * 100% - 1px);
+  margin-top: 1px;
+  margin-left: 0.5px;
+  margin-right: 0.5px;
+}
+.css-exp .title,
+.css-exp h1,
+.css-exp h2,
+.css-exp h3,
+.css-exp h4,
+.css-exp h5,
+.css-exp h6 {
+  width: calc(100% - 1px);
+}
+.css-exp .row {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.css-exp [class*=col-] {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 20px 30px;
+}
+.css-exp {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.css-exp ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px dotted red;
+}
+.css-exp li {
+  border: 1px solid #999;
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
 /*# sourceMappingURL=/styles.164d45a1.css.map */

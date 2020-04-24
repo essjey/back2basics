@@ -18,6 +18,8 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "postcss-modules": "^2.0.0",
     "prettier": "^2.0.5",
     "sass": "^1.26.5"
   }
