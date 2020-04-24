@@ -1,6 +1,7 @@
 import React from "react";
 
 // TODOs:
+// 0. Update Event Listener for React
 // 1. Add support for floating #s
 // 2. Add support for -/+
 // 3. Add support for %
