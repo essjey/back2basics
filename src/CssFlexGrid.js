@@ -1,6 +1,8 @@
 import React from "react";
 import CSS1 from "./css-ex1";
 import CSS2 from "./css-ex2";
+import CSS3 from "./css-ex3";
+import CSS4 from "./css-ex4";
 
 const CssFlexGrid = () => {
   return (
@@ -9,6 +11,8 @@ const CssFlexGrid = () => {
 
       <CSS1 />
       <CSS2 />
+      <CSS3 />
+      <CSS4 />
     </div>
   );
 };

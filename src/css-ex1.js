@@ -3,7 +3,7 @@ import React from "react";
 const CSS1 = () => {
   return (
     <div className="row">
-      <h3 className="title">Excercise 1</h3>
+      <h3 className="title">Excercise 1: flex + width - gutter</h3>
 
       <div className="col-3">Row 1: Column 1</div>
       <div className="col-3">Row 1: Column 2</div>

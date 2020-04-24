@@ -1,0 +1,66 @@
+$red: #d30009;
+$blue: #33477c;
+$yellow: #ffd401;
+$beige: #f6f6ee;
+$black: #000;
+
+.grid-wrap {
+  display: grid;
+  // background-image: url("./img/mondrian1.png");
+  background-color: $black;
+  background-position: top left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  max-width: 690px;
+  grid-gap: 11px;
+  grid-template:
+    "a a a a b c c d"
+    "a a a a e c c d" 20px
+    "a a a a e c c g"
+    "a a a a e f f g"
+    "a a a a e j j j"
+    "h h h h i j j j"
+    "h h h h i j j j";
+}
+
+.a {
+  grid-area: a;
+  background-color: $red;
+}
+.b {
+  grid-area: b;
+  background-color: $yellow;
+}
+.c {
+  grid-area: c;
+  background-color: $beige;
+}
+.d {
+  grid-area: d;
+  background-color: $red;
+}
+.e {
+  grid-area: e;
+  background-color: $beige;
+}
+.f {
+  grid-area: f;
+  background-color: $blue;
+}
+.g {
+  grid-area: g;
+  background-color: $beige;
+}
+.h {
+  grid-area: h;
+  background-color: $beige;
+}
+.i {
+  grid-area: i;
+  background-color: $blue;
+}
+.j {
+  grid-area: j;
+  background-color: $yellow;
+}

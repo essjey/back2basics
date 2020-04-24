@@ -162,11 +162,17 @@ ul.flex {
   margin-left: 0.5px;
   margin-right: 0.5px;
 }
+.css-exp .flex-col-1 {
+  flex: 1 0 8.3333333333%;
+}
 .css-exp .col-2 {
   width: calc(2 / 12 * 100% - 1px);
   margin-top: 1px;
   margin-left: 0.5px;
   margin-right: 0.5px;
+}
+.css-exp .flex-col-2 {
+  flex: 1 0 16.6666666667%;
 }
 .css-exp .col-3 {
   width: calc(3 / 12 * 100% - 1px);
@@ -174,11 +180,17 @@ ul.flex {
   margin-left: 0.5px;
   margin-right: 0.5px;
 }
+.css-exp .flex-col-3 {
+  flex: 1 0 25%;
+}
 .css-exp .col-4 {
   width: calc(4 / 12 * 100% - 1px);
   margin-top: 1px;
   margin-left: 0.5px;
   margin-right: 0.5px;
+}
+.css-exp .flex-col-4 {
+  flex: 1 0 33.3333333333%;
 }
 .css-exp .col-5 {
   width: calc(5 / 12 * 100% - 1px);
@@ -186,11 +198,17 @@ ul.flex {
   margin-left: 0.5px;
   margin-right: 0.5px;
 }
+.css-exp .flex-col-5 {
+  flex: 1 0 41.6666666667%;
+}
 .css-exp .col-6 {
   width: calc(6 / 12 * 100% - 1px);
   margin-top: 1px;
   margin-left: 0.5px;
   margin-right: 0.5px;
+}
+.css-exp .flex-col-6 {
+  flex: 1 0 50%;
 }
 .css-exp .col-7 {
   width: calc(7 / 12 * 100% - 1px);
@@ -198,11 +216,17 @@ ul.flex {
   margin-left: 0.5px;
   margin-right: 0.5px;
 }
+.css-exp .flex-col-7 {
+  flex: 1 0 58.3333333333%;
+}
 .css-exp .col-8 {
   width: calc(8 / 12 * 100% - 1px);
   margin-top: 1px;
   margin-left: 0.5px;
   margin-right: 0.5px;
+}
+.css-exp .flex-col-8 {
+  flex: 1 0 66.6666666667%;
 }
 .css-exp .col-9 {
   width: calc(9 / 12 * 100% - 1px);
@@ -210,11 +234,17 @@ ul.flex {
   margin-left: 0.5px;
   margin-right: 0.5px;
 }
+.css-exp .flex-col-9 {
+  flex: 1 0 75%;
+}
 .css-exp .col-10 {
   width: calc(10 / 12 * 100% - 1px);
   margin-top: 1px;
   margin-left: 0.5px;
   margin-right: 0.5px;
+}
+.css-exp .flex-col-10 {
+  flex: 1 0 83.3333333333%;
 }
 .css-exp .col-11 {
   width: calc(11 / 12 * 100% - 1px);
@@ -222,11 +252,17 @@ ul.flex {
   margin-left: 0.5px;
   margin-right: 0.5px;
 }
+.css-exp .flex-col-11 {
+  flex: 1 0 91.6666666667%;
+}
 .css-exp .col-12 {
   width: calc(12 / 12 * 100% - 1px);
   margin-top: 1px;
   margin-left: 0.5px;
   margin-right: 0.5px;
+}
+.css-exp .flex-col-12 {
+  flex: 1 0 100%;
 }
 .css-exp .title,
 .css-exp h1,
@@ -242,8 +278,6 @@ ul.flex {
   flex-flow: row wrap;
   margin: auto;
   max-width: 100%;
-  justify-content: center;
-  align-items: center;
 }
 .css-exp [class*=col-] {
   background-color: rebeccapurple;
@@ -261,8 +295,57 @@ ul.flex {
 }
 .css-exp li {
   border: 1px solid #999;
-  margin: 0.5em;
-  padding: 0.5em;
+}
+.css-exp .grid-wrap {
+  display: grid;
+  background-color: #000;
+  background-position: top left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 500px;
+  max-width: 690px;
+  grid-gap: 11px;
+  grid-template: "a a a a b c c d" "a a a a e c c d" 20px "a a a a e c c g" "a a a a e f f g" "a a a a e j j j" "h h h h i j j j" "h h h h i j j j";
+}
+.css-exp .a {
+  grid-area: a;
+  background-color: #d30009;
+}
+.css-exp .b {
+  grid-area: b;
+  background-color: #ffd401;
+}
+.css-exp .c {
+  grid-area: c;
+  background-color: #f6f6ee;
+}
+.css-exp .d {
+  grid-area: d;
+  background-color: #d30009;
+}
+.css-exp .e {
+  grid-area: e;
+  background-color: #f6f6ee;
+}
+.css-exp .f {
+  grid-area: f;
+  background-color: #33477c;
+}
+.css-exp .g {
+  grid-area: g;
+  background-color: #f6f6ee;
+}
+.css-exp .h {
+  grid-area: h;
+  background-color: #f6f6ee;
+}
+.css-exp .i {
+  grid-area: i;
+  background-color: #33477c;
+}
+.css-exp .j {
+  grid-area: j;
+  background-color: #ffd401;
 }
 
 /*# sourceMappingURL=/styles.164d45a1.css.map */

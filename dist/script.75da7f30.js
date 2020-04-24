@@ -31269,7 +31269,7 @@ var CSS1 = function CSS1() {
     className: "row"
   }, /*#__PURE__*/_react.default.createElement("h3", {
     className: "title"
-  }, "Excercise 1"), /*#__PURE__*/_react.default.createElement("div", {
+  }, "Excercise 1: flex + width - gutter"), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-3"
   }, "Row 1: Column 1"), /*#__PURE__*/_react.default.createElement("div", {
     className: "col-3"
@@ -31305,24 +31305,98 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var CSS2 = function CSS2() {
-  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "Excercise 2"), /*#__PURE__*/_react.default.createElement("ul", {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "Excercise 2: flex + flex-basis"), /*#__PURE__*/_react.default.createElement("ul", {
     className: "row"
   }, /*#__PURE__*/_react.default.createElement("li", {
-    className: "flex1"
+    className: "flex-col-4"
   }, "1 Lorem ipsum dolor sit amet."), /*#__PURE__*/_react.default.createElement("li", {
-    className: "flex1"
+    className: "flex-col-4"
   }, "2 Illum facere saepe nam praesentium."), /*#__PURE__*/_react.default.createElement("li", {
-    className: "flex2"
+    className: "flex-col-4"
   }, "3 Vero quia possimus unde sint!"), /*#__PURE__*/_react.default.createElement("li", {
-    className: "flex1"
+    className: "flex-col-6"
   }, "4 Cupiditate, ab molestias aliquam cum."), /*#__PURE__*/_react.default.createElement("li", {
-    className: "flex2"
+    className: "flex-col-6"
   }, "5 Recusandae inventore distinctio reiciendis id."), /*#__PURE__*/_react.default.createElement("li", {
-    className: "flex1"
+    className: "flex-col-12"
   }, "6 Laboriosam iure saepe distinctio, sunt.")));
 };
 
 var _default = CSS2;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"css-ex3.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CSS3 = function CSS3() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "Images that resize"), /*#__PURE__*/_react.default.createElement("p", null, /*#__PURE__*/_react.default.createElement("strong", null, "Normal Image: "), /*#__PURE__*/_react.default.createElement("img", {
+    src: "http://placecorgi.com/260/180",
+    alt: "",
+    className: "src"
+  })), /*#__PURE__*/_react.default.createElement("picture", null, /*#__PURE__*/_react.default.createElement("source", {
+    srcSet: "http://placecorgi.com/700/180",
+    media: "(min-width: 960px)"
+  }), /*#__PURE__*/_react.default.createElement("source", {
+    srcSet: "http://placecorgi.com/500/180",
+    media: "(min-width: 600px)"
+  }), /*#__PURE__*/_react.default.createElement("source", {
+    srcSet: "http://placecorgi.com/400/180",
+    media: "(min-width: 400px)"
+  }), /*#__PURE__*/_react.default.createElement("img", {
+    src: "http://placecorgi.com/400/180",
+    alt: "Corgi!"
+  })));
+};
+
+var _default = CSS3;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"css-ex4.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var CSS4 = function CSS4() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h3", null, "CSS Grid"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "grid-wrap"
+  }, /*#__PURE__*/_react.default.createElement("div", {
+    className: "a"
+  }, "a"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "b"
+  }, "b"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "c"
+  }, "c"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "d"
+  }, "d"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "e"
+  }, "e"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "f"
+  }, "f"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "g"
+  }, "g"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "h"
+  }, "h"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "i"
+  }, "i"), /*#__PURE__*/_react.default.createElement("div", {
+    className: "j"
+  }, "j")));
+};
+
+var _default = CSS4;
 exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"CssFlexGrid.js":[function(require,module,exports) {
 "use strict";
@@ -31338,17 +31412,21 @@ var _cssEx = _interopRequireDefault(require("./css-ex1"));
 
 var _cssEx2 = _interopRequireDefault(require("./css-ex2"));
 
+var _cssEx3 = _interopRequireDefault(require("./css-ex3"));
+
+var _cssEx4 = _interopRequireDefault(require("./css-ex4"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var CssFlexGrid = function CssFlexGrid() {
   return /*#__PURE__*/_react.default.createElement("div", {
     className: "css-exp"
-  }, /*#__PURE__*/_react.default.createElement("h1", null, "CSS Grids & Flexbox for Responsive Web Design"), /*#__PURE__*/_react.default.createElement(_cssEx.default, null), /*#__PURE__*/_react.default.createElement(_cssEx2.default, null));
+  }, /*#__PURE__*/_react.default.createElement("h1", null, "CSS Grids & Flexbox for Responsive Web Design"), /*#__PURE__*/_react.default.createElement(_cssEx.default, null), /*#__PURE__*/_react.default.createElement(_cssEx2.default, null), /*#__PURE__*/_react.default.createElement(_cssEx3.default, null), /*#__PURE__*/_react.default.createElement(_cssEx4.default, null));
 };
 
 var _default = CssFlexGrid;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./css-ex1":"css-ex1.js","./css-ex2":"css-ex2.js"}],"script.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./css-ex1":"css-ex1.js","./css-ex2":"css-ex2.js","./css-ex3":"css-ex3.js","./css-ex4":"css-ex4.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -31409,7 +31487,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54033" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56674" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
