@@ -4,6 +4,7 @@ import { Router } from "@reach/router";
 import NavBar from "./NavBar";
 import HtmlCssEx from "./html-css-ex";
 import Experiments from "./experiments";
+import cssFlexGrid from "./css-flex-grid";
 
 // naming things is hard.
 
@@ -20,6 +21,7 @@ const App = () => {
       <Router>
         <HtmlCssEx path="/" />
         <Experiments path="/prog-fund" />
+        <cssFlexGrid path="/css" />
       </Router>
     </main>
   );

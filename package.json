@@ -5,7 +5,7 @@
   "main": "script.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "format": "prettier \"src/** /*.{js,html,css}\" --write",
+    "format": "prettier \"src/** /*.{js,html,scss}\" --write",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,6 +18,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
-    "prettier": "^2.0.5"
+    "prettier": "^2.0.5",
+    "sass": "^1.26.5"
   }
 }

@@ -31012,6 +31012,7 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // TODOs:
+// 0. Update Event Listener for React
 // 1. Add support for floating #s
 // 2. Add support for -/+
 // 3. Add support for %
@@ -31249,7 +31250,25 @@ var Experiments = function Experiments() {
 
 var _default = Experiments;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./calculator":"calculator.js","./IHeartDogs":"IHeartDogs.js"}],"script.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./calculator":"calculator.js","./IHeartDogs":"IHeartDogs.js"}],"css-flex-grid.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var cssFlexGrid = function cssFlexGrid() {
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("h1", null, "C\"SS Grids & Flexbox for Responsive Web Design"), /*#__PURE__*/_react.default.createElement("p", null, "..."));
+};
+
+var _default = cssFlexGrid;
+exports.default = _default;
+},{"react":"../node_modules/react/index.js"}],"script.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -31264,23 +31283,25 @@ var _htmlCssEx = _interopRequireDefault(require("./html-css-ex"));
 
 var _experiments = _interopRequireDefault(require("./experiments"));
 
+var _cssFlexGrid = _interopRequireDefault(require("./css-flex-grid"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // naming things is hard.
 var App = function App() {
   return /*#__PURE__*/_react.default.createElement("main", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement(_router.Router, {
-    primary: false
-  }, /*#__PURE__*/_react.default.createElement(_htmlCssEx.default, {
+  }, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement(_router.Router, null, /*#__PURE__*/_react.default.createElement(_htmlCssEx.default, {
     path: "/"
   }), /*#__PURE__*/_react.default.createElement(_experiments.default, {
     path: "/prog-fund"
+  }), /*#__PURE__*/_react.default.createElement("cssFlexGrid", {
+    path: "/css"
   })));
 };
 
 (0, _reactDom.render)( /*#__PURE__*/_react.default.createElement(App, null), document.getElementById("root"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","@reach/router":"../node_modules/@reach/router/es/index.js","./NavBar":"NavBar.js","./html-css-ex":"html-css-ex.js","./experiments":"experiments.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","@reach/router":"../node_modules/@reach/router/es/index.js","./NavBar":"NavBar.js","./html-css-ex":"html-css-ex.js","./experiments":"experiments.js","./css-flex-grid":"css-flex-grid.js"}],"../node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -31308,7 +31329,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53907" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53206" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
