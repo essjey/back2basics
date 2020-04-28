@@ -31026,6 +31026,7 @@ var Calculator = function Calculator() {
   var operator = null;
 
   function manageMath(value) {
+    console.log(buffer);
     if (buffer === "0") return;
     var intBuffer = parseInt(buffer);
 
@@ -31069,10 +31070,11 @@ var Calculator = function Calculator() {
 
       case "=":
         if (operator === null) return;
+        console.log(buffer);
         doMath(Number(buffer));
+        buffer = "" + total;
         total = 0;
         operator = null;
-        buffer = "" + total;
         break;
 
       case "←":
@@ -31179,7 +31181,7 @@ var Dogs = function Dogs() {
       var processingPromise = response.json();
       return processingPromise;
     }).then(function (processingResponse) {
-      console.log(processingResponse);
+      // console.log(processingResponse);
       var img = document.createElement("img");
       img.src = processingResponse.message;
       img.alt = "Cute Doggo";
@@ -31487,7 +31489,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56674" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59868" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

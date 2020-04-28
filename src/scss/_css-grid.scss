@@ -22,6 +22,28 @@ $black: #000;
     "a a a a e j j j"
     "h h h h i j j j"
     "h h h h i j j j";
+
+  @media screen and (max-width: 767px) {
+    grid-template:
+      "a a a a "
+      "a a a a " 20px
+      "a a a a "
+      "a a a a "
+      "a a a a "
+      "h h h h "
+      "h h h h "
+      "b c c d "
+      "e c c d " 20px
+      "e c c g "
+      "e f f g "
+      "e j j j "
+      "i j j j "
+      "i j j j ";
+  }
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
 }
 
 .a {

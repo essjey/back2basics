@@ -13,7 +13,7 @@ const Dogs = () => {
         return processingPromise;
       })
       .then(function (processingResponse) {
-        console.log(processingResponse);
+        // console.log(processingResponse);
         const img = document.createElement("img");
         img.src = processingResponse.message;
         img.alt = "Cute Doggo";

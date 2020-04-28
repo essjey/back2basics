@@ -307,6 +307,16 @@ ul.flex {
   grid-gap: 11px;
   grid-template: "a a a a b c c d" "a a a a e c c d" 20px "a a a a e c c g" "a a a a e f f g" "a a a a e j j j" "h h h h i j j j" "h h h h i j j j";
 }
+@media screen and (max-width: 767px) {
+  .css-exp .grid-wrap {
+    grid-template: "a a a a " "a a a a " 20px "a a a a " "a a a a " "a a a a " "h h h h " "h h h h " "b c c d " "e c c d " 20px "e c c g " "e f f g " "e j j j " "i j j j " "i j j j ";
+  }
+}
+@media screen and (max-width: 500px) {
+  .css-exp .grid-wrap {
+    display: block;
+  }
+}
 .css-exp .a {
   grid-area: a;
   background-color: #d30009;
