@@ -13,7 +13,6 @@ const Calculator = () => {
   let operator = null;
 
   function manageMath(value) {
-    console.log(buffer);
     if (buffer === "0") return;
 
     const intBuffer = parseInt(buffer);
@@ -54,7 +53,6 @@ const Calculator = () => {
         break;
       case "=":
         if (operator === null) return;
-        console.log(buffer);
         doMath(Number(buffer));
         buffer = "" + total;
         total = 0;
